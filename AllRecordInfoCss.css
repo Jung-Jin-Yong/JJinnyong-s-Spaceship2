@@ -1,0 +1,24 @@
+#record{
+    padding-left: 150px;
+    padding-right: 119px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#record p{
+    font-size: 20px;
+}
+
+#comment{
+    padding-left: 150px;
+    padding-right: 119px;
+    font-size: 30px;
+}
+
+#disqus_thread{
+    padding-left: 150px;
+    padding-right: 119px;   
+}

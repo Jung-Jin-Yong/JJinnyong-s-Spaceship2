@@ -1,0 +1,20 @@
+#homeImage{
+  width: 450px;
+}
+
+#homepageTitle{
+    text-align: center;
+    font-size: 50px;
+}
+
+#homeImageFrame{
+  text-align: center;
+}
+
+#myImageFrame{
+  text-align: center;
+}
+
+#myImage{
+  width: 300px;
+}

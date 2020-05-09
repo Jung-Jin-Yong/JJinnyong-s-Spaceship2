@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>민정이네 찐뇽이의 우주비행선 2호기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS_Homepage.css">
+    <link rel="stylesheet" href="sideBar.css">
+    <link rel="stylesheet" href="sideBarMenu.css">
+  </head>
+  <body onload="showImage()">
+    <script src="spaceshipEngine.js"></script>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="sidebar">
+      <br><br><br><br><br><br>
+      <ul id="ac">
+        <li class="m1">
+          <p>현재 날씨(온도, 지역), 시각</p>
+          <div><span class="js-weather"></span>, <span id="time">00:00</span></div><br>
+          <script src="clock.js"></script>
+          <script src="ujuweather.js"></script>
+        </li>
+        <li class="m1">
+          <p><a href="index.html">Home</a></p><br>
+        </li>
+        <li class="m1">
+            <p>데이뜌 일지(개발 예정)</p><br>
+            <ul class="m2">
+                <li> <p>현재 개발중입니다.</p></li><br> <!--마지막 목록은 반드시 br태그 붙이기!!-->
+            </ul>
+        </li>
+        <li class="m1">
+            <p>업데이트 정보</p><br>
+            <ul class="m2">
+                <li> <p><a href="UpdateInfo/2020.05.09Upd.html">2020년 5월 9일</a></p></li><br><!--마지막 목록은 반드시 br태그 붙이기!!-->
+            </ul>
+        </li>
+        <li class="m1">
+            <p><a href="AboutUs.html">About Us</a></p><br>
+        </li>
+    </ul>
+    </div>
+    <script> 
+      $('.m1').click(function() {
+          $('.m2').slideUp();
+          if($(this).children('.m2').is(':visible')){
+              $(this).children('.m2').slideUp();
+          } else {
+              $(this).children('.m2').slideDown();
+          }
+      });
+    </script>
+    <span id="myImageFrame">
+      <p><img id="myImage" src="images/17.jpg"></p><!--간판 사진 넣는 칸-->
+    </span>
+    <p style="text-align: center;font-size: larger;">이 페이지는 공부/데이트/정보/실험 등의 일지가 기록되는 공간입니다. 자세한 문의사항은 wjdwlsdyd@gmail.com으로 문의바랍니다.</p>
+  </body>
+</html>
