@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>민정이네 찐뇽이의 우주비행선 2호기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS_Homepage.css">
+    <link rel="stylesheet" href="../sideBar.css">
+    <link rel="stylesheet" href="../sideBarMenu.css">
+    <link rel="stylesheet" href="../AllRecordInfoCss.css">
+  </head>
+  <body>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="sidebar">
+      <br><br><br><br><br><br>
+      <ul id="ac">
+        <li class="m1">
+          <p>현재 날씨(온도℃, 지역), 시각</p>
+          <div><span class="js-weather"></span>, <span id="time">00:00</span></div><br>
+          <script src="../clock.js"></script>
+          <script src="../ujuweather.js"></script>
+        </li>
+        <li class="m1">
+          <p><a href="../index.html">Home</a></p><br>
+        </li>
+        <li class="m1">
+            <p>데이뜌 일지(개발 예정)</p><br>
+            <ul class="m2">
+                <li> <p>현재 개발중입니다.</p></li><br> <!--마지막 목록은 반드시 br태그 붙이기!!-->
+            </ul>
+        </li>
+        <li class="m1">
+            <p>업데이트 정보</p><br>
+            <ul class="m2">
+                <li> <p><a href="../UpdateInfo/2020.05.09Upd.html">2020년 5월 9일</a></p></li><br>
+            </ul>
+        </li>
+        <li class="m1">
+            <p><a href="../AboutUs.html">About Us</a></p><br>
+        </li>
+    </ul>
+    </div>
+    <script> 
+      $('.m1').click(function() {
+          $('.m2').slideUp();
+          if($(this).children('.m2').is(':visible')){
+              $(this).children('.m2').slideUp();
+          } else {
+              $(this).children('.m2').slideDown();
+          }
+      });
+    </script>
+    <h1>2020년 5월 14일 연구 일지</h1>
+    <div id="record">
+      <br>
+      <p>1) 일단어</p>
+      <p>2) 자바스크립트 알고리즘 3장 숫자체계 공부</p>
+      <p>3) 프로그래머스 문제 1개</p>
+      <p>정수 내림, 반올림, 올림하는데 사용되는 함수 Math.floor(), Math.round(), Math.ceil()에 대하여 복습하고 숫자들의 최대치와 최소치를 나타내는 명령어에 대하여 공부하였습니다. 또한 소수 탐색 알고리즘, 소인수분해 알고리즘을 학습하였습니다.</p>
+      <p>탐욕 알고리즘 분야 <a href="https://programmers.co.kr/learn/courses/30/lessons/42862" style="color: blue;">코딩테스트 문제</a>를 풀었습니다. 이거 어렵당😆</p>
+    </div>
+
+    <h2 id="comment">댓글은 여기에</h2>
+        <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://jjinnyongs-spaceship.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </body>
+</div>
+</div>
+</html>
+  </body>
+</html>
